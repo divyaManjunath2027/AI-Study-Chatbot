@@ -9,3 +9,7 @@ __pycache__/
 dist/
 build/
 *.log
+
+# StudyAI database and authentication secret
+backend/studyai.db
+backend/.studyai_secret
