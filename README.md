@@ -1,3 +1,3 @@
 # AI-Study-Chatbot
 
-A study chat that talks like Meera, a final-year BCA senior, instead of a generic assistant. Built with React, TypeScript, FastAPI, and Ollama.
+**Aggu is your friendly AI-powered study companion**, built to help students understand academic concepts through interactive conversations. Powered by React, TypeScript, FastAPI, and Ollama.
