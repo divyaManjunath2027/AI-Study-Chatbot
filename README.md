@@ -1,3 +1,343 @@
-# AI-Study-Chatbot
+# 📚 Aggu – AI Study Chatbot
 
-**Aggu is your friendly AI-powered study companion**, built to help students understand academic concepts through interactive conversations. Powered by React, TypeScript, FastAPI, and Ollama.
+### Your Personal AI-Powered Study Companion
+
+**Aggu** is an intelligent AI Study Chatbot designed to make learning easier, more interactive and accessible for students. It helps learners understand academic concepts, ask questions, explore topics and receive structured explanations through natural conversations.
+
+Powered by **React, TypeScript, FastAPI, SQLite and Ollama**, Aggu combines a modern student-friendly interface with locally running AI technology.
+
+---
+
+## 🌟 Project Preview
+
+<!-- Replace these paths with your actual PNG screenshots -->
+
+<p align="center">
+  <img src="docs/screenshots/homepage.png" width="85%" alt="Aggu Homepage"/>
+  <br/>
+  <em>A clean and welcoming learning experience</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/login.png" width="85%" alt="Aggu Login and Signup"/>
+  <br/>
+  <em>Student authentication interface</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/chat.png" width="85%" alt="Aggu AI Chat Interface"/>
+  <br/>
+  <em>Interactive AI-powered study environment</em>
+</p>
+
+---
+
+## ✨ Key Features
+
+### 🤖 1. AI-Powered Study Assistance
+- Ask academic questions using natural language.
+- Receive AI-generated explanations.
+- Get help understanding difficult concepts.
+- Use an AI model running locally through Ollama.
+
+### 💬 2. Interactive Chat Interface
+- Conversational learning experience.
+- Ask follow-up questions.
+- Maintain conversation context during a chat.
+- Clear and readable chat responses.
+
+### 📝 3. Structured AI Responses
+- Markdown-formatted answers.
+- Headings, paragraphs and bullet points.
+- Tables and formatted content.
+- Easier-to-read explanations.
+
+### 👩‍🎓 4. Student Authentication
+- Student registration.
+- Secure login and logout.
+- Personalized user experience.
+- SQLite-backed user data and session handling.
+
+### 🎨 5. Modern User Interface
+- Clean and student-friendly design.
+- Google Sans Flex typography.
+- Responsive styling.
+- Comfortable reading experience.
+
+### 🔄 6. Local AI Integration
+- Ollama-based model integration.
+- Gemma 2B language model.
+- Communication between frontend, backend and AI model.
+
+---
+
+## 📸 Project Screenshots
+
+### Homepage
+![Aggu Homepage](docs/screenshots/homepage.png)
+
+### Login Page
+![Aggu Login](docs/screenshots/login.png)
+
+### AI Chat Interface
+![Aggu Chat](docs/screenshots/chat.png)
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| React | Building the user interface |
+| TypeScript | Type-safe frontend development |
+| Vite | Frontend development and build tool |
+| CSS | Styling and responsive design |
+| Google Sans Flex | Application typography |
+| Python | Backend programming |
+| FastAPI | REST API development |
+| SQLite | Database for application data |
+| Ollama | Running AI models locally |
+| Gemma 2B | AI language model |
+| React Markdown | Rendering formatted AI responses |
+| Remark GFM | Supporting tables, lists and GitHub-style Markdown |
+| Git & GitHub | Version control and collaboration |
+
+---
+
+## 🏗️ System Architecture
+
+Aggu follows a frontend-backend-AI architecture.
+
+```text
+             STUDENT
+                |
+                v
+       REACT + TYPESCRIPT
+          FRONTEND
+                |
+                | HTTP API Requests
+                v
+          FASTAPI BACKEND
+                |
+          +-----+------+
+          |            |
+          v            v
+       SQLITE        OLLAMA
+      DATABASE         |
+                       v
+                   GEMMA 2B
+                       |
+                       v
+                AI-GENERATED
+                   RESPONSE
+                       |
+                       v
+                FRONTEND CHAT
+```
+
+### How It Works
+
+1. The student interacts with Aggu through the React interface.
+2. The frontend sends requests to the FastAPI backend.
+3. The backend handles application logic and database operations.
+4. Questions are sent to the locally running Ollama model.
+5. Gemma 2B generates an answer.
+6. The backend returns the response to the frontend.
+7. The chatbot displays the answer using Markdown formatting.
+
+---
+
+## 📂 Project Structure
+
+```text
+AI-Study-Chatbot/
+│
+├── backend/
+│   ├── main.py
+│   ├── requirements.txt
+│   └── studyai.db
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── App.tsx
+│   │   ├── App.css
+│   │   ├── Auth.css
+│   │   ├── index.css
+│   │   ├── main.tsx
+│   │   └── MarkdownMessage.tsx
+│   │
+│   ├── package.json
+│   └── index.html
+│
+├── docs/
+│   └── screenshots/
+│
+├── .gitignore
+└── README.md
+```
+
+*Note: The project structure above highlights the main application files. Local databases, virtual environments and secret files should not be committed to GitHub.*
+
+---
+
+## ⚙️ Installation and Setup
+
+Follow these instructions to run Aggu locally on macOS.
+
+### Prerequisites
+
+Install the following:
+
+- Python 3
+- Node.js and npm
+- Git
+- Ollama
+- Visual Studio Code (recommended)
+
+### Step 1: Clone the Repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd AI-Study-Chatbot
+```
+
+Replace `YOUR_GITHUB_REPOSITORY_URL` with your actual GitHub repository URL.
+
+### Step 2: Set Up the Python Backend
+
+Create a virtual environment:
+
+```bash
+python3 -m venv .venv
+```
+
+Activate it:
+
+```bash
+source .venv/bin/activate
+```
+
+Install backend dependencies:
+
+```bash
+pip install -r backend/requirements.txt
+```
+
+Start the backend:
+
+```bash
+cd backend
+uvicorn main:app --reload
+```
+
+Backend URL:
+
+`http://127.0.0.1:8000`
+
+FastAPI documentation:
+
+`http://127.0.0.1:8000/docs`
+
+### Step 3: Install and Configure Ollama
+
+Download Ollama:
+
+https://ollama.com/download
+
+Download the Gemma 2B model:
+
+```bash
+ollama pull gemma:2b
+```
+
+Verify the downloaded model:
+
+```bash
+ollama list
+```
+
+Ensure the Ollama service is running before testing AI conversations.
+
+### Step 4: Set Up the Frontend
+
+Open a new terminal window.
+
+Navigate to the frontend:
+
+```bash
+cd ~/Desktop/AI-Study-Chatbot/frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal, usually:
+
+`http://localhost:5173`
+
+---
+
+## 🚀 Running the Complete Application
+
+Start the following services:
+
+| Service | Purpose |
+|---|---|
+| Ollama | Runs the local AI model |
+| FastAPI | Handles backend requests |
+| Vite | Runs the React frontend |
+
+Keep the frontend and backend terminals open while using Aggu.
+
+---
+
+## 🧪 Production Build
+
+To verify that the frontend is ready for production:
+
+```bash
+cd frontend
+npm run build
+```
+
+The compiled frontend files will be generated inside the `frontend/dist` directory.
+
+---
+
+## 🔮 Future Enhancements
+
+Potential improvements for future versions:
+
+- Personalized study plans.
+- Subject-wise learning assistance.
+- AI-generated quizzes and practice questions.
+- Study progress tracking.
+- PDF and document-based question answering.
+- Learning analytics and student dashboards.
+- Docker-based deployment.
+
+---
+
+## 🎯 Project Objective
+
+The objective of Aggu is to create an accessible and interactive AI-powered learning companion that helps students understand academic concepts, clarify doubts and develop independent learning habits.
+
+Aggu demonstrates how modern frontend technologies, backend APIs, databases and locally hosted language models can be combined to build an intelligent educational application.
+
+---
+
+## 👩‍💻 Developed With
+
+**Aggu – AI Study Chatbot**
+
+Built using React, TypeScript, Python, FastAPI, SQLite and Ollama.
+
+### Learn Better. Understand More. Grow Smarter. 📚
