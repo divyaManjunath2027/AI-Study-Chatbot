@@ -1,10 +1,10 @@
-# 📚 Aggu – AI Study Chatbot
+# 📚 Auggu – AI Study Chatbot
 
 ### Your Personal AI-Powered Study Companion
 
-**Aggu** is an intelligent AI Study Chatbot designed to make learning easier, more interactive and accessible for students. It helps learners understand academic concepts, ask questions, explore topics and receive structured explanations through natural conversations.
+**Auggu** is an intelligent AI Study Chatbot designed to make learning easier, more interactive and accessible for students. It helps learners understand academic concepts, ask questions, explore topics and receive structured explanations through natural conversations.
 
-Powered by **React, TypeScript, FastAPI, SQLite and Ollama**, Aggu combines a modern student-friendly interface with locally running AI technology.
+Powered by **React, TypeScript, FastAPI, SQLite and Ollama**, Auggu combines a modern student-friendly interface with locally running AI technology.
 
 ---
 
@@ -13,19 +13,19 @@ Powered by **React, TypeScript, FastAPI, SQLite and Ollama**, Aggu combines a mo
 <!-- Replace these paths with your actual PNG screenshots -->
 
 <p align="center">
-  <img src="docs/screenshots/homepage.png" width="85%" alt="Aggu Homepage"/>
+  <img src="docs/screenshots/homepage.png" width="85%" alt="Auggu Homepage"/>
   <br/>
   <em>A clean and welcoming learning experience</em>
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/login.png" width="85%" alt="Aggu Login and Signup"/>
+  <img src="docs/screenshots/login.png" width="85%" alt="Auggu Login and Signup"/>
   <br/>
   <em>Student authentication interface</em>
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/chat.png" width="85%" alt="Aggu AI Chat Interface"/>
+  <img src="docs/screenshots/chat.png" width="85%" alt="Auggu AI Chat Interface"/>
   <br/>
   <em>Interactive AI-powered study environment</em>
 </p>
@@ -74,13 +74,13 @@ Powered by **React, TypeScript, FastAPI, SQLite and Ollama**, Aggu combines a mo
 ## 📸 Project Screenshots
 
 ### Homepage
-![Aggu Homepage](docs/screenshots/homepage.png)
+![Auggu Homepage](docs/screenshots/homepage.png)
 
 ### Login Page
-![Aggu Login](docs/screenshots/login.png)
+![Auggu Login](docs/screenshots/login.png)
 
 ### AI Chat Interface
-![Aggu Chat](docs/screenshots/chat.png)
+![Auggu Chat](docs/screenshots/chat.png)
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
@@ -103,7 +103,7 @@ Powered by **React, TypeScript, FastAPI, SQLite and Ollama**, Aggu combines a mo
 
 ## 🏗️ System Architecture
 
-Aggu follows a frontend-backend-AI architecture.
+Auggu follows a frontend-backend-AI architecture.
 
 ```text
              STUDENT
@@ -134,7 +134,7 @@ Aggu follows a frontend-backend-AI architecture.
 
 ### How It Works
 
-1. The student interacts with Aggu through the React interface.
+1. The student interacts with Auggu through the React interface.
 2. The frontend sends requests to the FastAPI backend.
 3. The backend handles application logic and database operations.
 4. Questions are sent to the locally running Ollama model.
@@ -181,7 +181,7 @@ AI-Study-Chatbot/
 
 ## ⚙️ Installation and Setup
 
-Follow these instructions to run Aggu locally on macOS.
+Follow these instructions to run Auggu locally on macOS.
 
 ### Prerequisites
 
@@ -295,7 +295,7 @@ Start the following services:
 | FastAPI | Handles backend requests |
 | Vite | Runs the React frontend |
 
-Keep the frontend and backend terminals open while using Aggu.
+Keep the frontend and backend terminals open while using Auggu.
 
 ---
 
@@ -328,15 +328,15 @@ Potential improvements for future versions:
 
 ## 🎯 Project Objective
 
-The objective of Aggu is to create an accessible and interactive AI-powered learning companion that helps students understand academic concepts, clarify doubts and develop independent learning habits.
+The objective of Auggu is to create an accessible and interactive AI-powered learning companion that helps students understand academic concepts, clarify doubts and develop independent learning habits.
 
-Aggu demonstrates how modern frontend technologies, backend APIs, databases and locally hosted language models can be combined to build an intelligent educational application.
+Auggu demonstrates how modern frontend technologies, backend APIs, databases and locally hosted language models can be combined to build an intelligent educational application.
 
 ---
 
 ## 👩‍💻 Developed With
 
-**Aggu – AI Study Chatbot**
+**Auggu – AI Study Chatbot**
 
 Built using React, TypeScript, Python, FastAPI, SQLite and Ollama.
 
